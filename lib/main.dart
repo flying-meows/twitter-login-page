@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
+      //print('WelcomeScreen is here!');
       home: WelcomeScreen(),
     );
   }
