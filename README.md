@@ -1,5 +1,7 @@
 # twitter_login_page
 
+<img alt="Welcome Screen" src="welcome_screen.png" width="300">
+
 Reference tutorials:  
 
 • Welcome, Login, Signup Page - Flutter UI - Speed Code  
