@@ -36,13 +36,13 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "Sign Up",
-              textColor: kPrimaryLightColor,
+              textColor: kSecondaryExExLightColor,
               press: () {},
               size: null,
             ),
             RoundedButton(
               text: "Log In",
-              color: kPrimaryLightColor,
+              color: kSecondaryExExLightColor,
               textColor: kPrimaryColor,
               press: () {},
               size: null,

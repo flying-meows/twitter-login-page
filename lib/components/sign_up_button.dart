@@ -10,7 +10,7 @@ class SignUpButton extends StatelessWidget {
     this.text,
     this.press,
     this.color = kPrimaryColor,
-    this.textColor = kPrimaryLightColor,
+    this.textColor = kSecondaryExExLightColor,
     @required this.size,
   }) : super(key: key);
 

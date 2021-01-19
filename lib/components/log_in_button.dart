@@ -30,7 +30,7 @@ class LogInButton extends StatelessWidget {
                   color: Colors.blue, width: 1, style: BorderStyle.solid),
               borderRadius: new BorderRadius.circular(50),
             ),
-            color: kPrimaryLightColor,
+            color: kSecondaryExExLightColor,
             onPressed: () {},
             child: Text(
               text,
