@@ -42,7 +42,10 @@ dependencies:
   flutter_sticky_header: ^0.4.2
   draggable_scrollbar: ^0.0.4
   imageview360: ^1.0.0
-  # flutter_datetime_picker:
+  # <https://github.com/Realank/flutter_datetime_picker/issues/197#issuecomment-725831759>
+  flutter_datetime_picker:
+    git:
+      url: https://github.com/espresso3389/flutter_datetime_picker
 
 dev_dependencies:
   flutter_test:
