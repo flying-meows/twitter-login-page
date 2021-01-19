@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       //print('WelcomeScreen is here!');
-      home: WelcomeScreen(),
-      // home: LoginUI(),
+      // home: WelcomeScreen(),
+      home: LoginUI(),
     );
   }
 }
