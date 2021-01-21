@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:twitter_login_page/Screens/Login/login_screen.dart';
 import 'package:twitter_login_page/Screens/Welcome/components/background.dart';
 // import 'package:twitter_login_page/components/log_in_button.dart';
 import 'package:twitter_login_page/components/rounded_button.dart';
@@ -37,15 +38,24 @@ class Body extends StatelessWidget {
             RoundedButton(
               text: "Sign Up",
               textColor: kSecondaryExExLightColor,
-              press: () {},
-              size: null,
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginSceen();
+                    },
+                  ),
+                );
+              },
+              // size: null,
             ),
             RoundedButton(
               text: "Log In",
               color: kSecondaryExExLightColor,
               textColor: kPrimaryColor,
               press: () {},
-              size: null,
+              // size: null,
             ),
           ],
         ),

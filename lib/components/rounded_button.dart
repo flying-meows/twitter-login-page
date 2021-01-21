@@ -11,10 +11,10 @@ class RoundedButton extends StatelessWidget {
     this.press,
     this.color = kPrimaryColor,
     this.textColor = kPrimaryColor,
-    @required this.size,
+    // @required this.size,
   }) : super(key: key);
 
-  final Size size;
+  // final Size size;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class RoundedButton extends StatelessWidget {
             ),
             padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
             color: color,
-            onPressed: () {},
+            onPressed: press,
             child: Text(
               text,
               style: TextStyle(
