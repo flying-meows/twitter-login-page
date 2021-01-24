@@ -54,7 +54,16 @@ class Body extends StatelessWidget {
               text: "Log In",
               color: kSecondaryExExLightColor,
               textColor: kPrimaryColor,
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginSceen();
+                    },
+                  ),
+                );
+              },
               // size: null,
             ),
           ],
