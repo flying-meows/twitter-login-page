@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:twitter_login_page/Screens/Login/login_screen.dart';
+import 'package:twitter_login_page/Screens/Signup/components/signup_screen.dart';
 import 'package:twitter_login_page/Screens/Welcome/components/background.dart';
 // import 'package:twitter_login_page/components/log_in_button.dart';
 import 'package:twitter_login_page/components/rounded_button.dart';
@@ -43,7 +44,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      // return SignUp();
+                      return SignupScreen();
                     },
                   ),
                 );
