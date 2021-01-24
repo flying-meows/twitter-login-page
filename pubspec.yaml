@@ -32,20 +32,6 @@ dependencies:
   # https://stackoverflow.com/a/63390543/5307753
   flutter_svg: ^0.18.0
 
-  # animate_welcome_screen.dart dependencies 
-  # <https://github.com/rishabhdavesar/ui/blob/master/pubspec.yaml>
-    # hidden_drawer_menu: ^1.1.2
-  flare_flutter:
-  smooth_star_rating: ^1.0.3
-  analog_clock: ^0.0.2
-  day_night_switch:
-  flutter_sticky_header: ^0.4.2
-  draggable_scrollbar: ^0.0.4
-  imageview360: ^1.0.0
-  # <https://github.com/Realank/flutter_datetime_picker/issues/197#issuecomment-725831759>
-  flutter_datetime_picker:
-    git:
-      url: https://github.com/espresso3389/flutter_datetime_picker
   # <https://medium.com/codechai/how-to-create-hyperlink-for-text-in-flutter-ecf7d6019dfb>
   url_launcher: ^5.7.5
 

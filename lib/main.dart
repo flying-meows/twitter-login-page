@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:twitter_login_page/Screens/Welcome/animated_welcome_screen.dart';
 import 'package:twitter_login_page/Screens/Welcome/welcome_screen.dart';
 import 'package:twitter_login_page/constants.dart';
 
@@ -18,9 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      //print('WelcomeScreen is here!');
       home: WelcomeScreen(),
-      // home: LoginUI(),
     );
   }
 }

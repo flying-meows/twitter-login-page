@@ -43,7 +43,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return LoginSceen();
+                      // return SignUp();
                     },
                   ),
                 );
@@ -59,7 +59,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return LoginSceen();
+                      return LoginScreen();
                     },
                   ),
                 );
