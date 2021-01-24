@@ -46,6 +46,8 @@ dependencies:
   flutter_datetime_picker:
     git:
       url: https://github.com/espresso3389/flutter_datetime_picker
+  # <https://medium.com/codechai/how-to-create-hyperlink-for-text-in-flutter-ecf7d6019dfb>
+  url_launcher: ^5.7.5
 
 dev_dependencies:
   flutter_test:

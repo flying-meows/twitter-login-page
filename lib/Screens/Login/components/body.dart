@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:twitter_login_page/Screens/Welcome/welcome_screen.dart';
 import 'package:twitter_login_page/components/rounded_button.dart';
 import 'package:twitter_login_page/constants.dart';
-// import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Body extends StatelessWidget {
   // final Widget child;
@@ -70,19 +70,65 @@ class Body extends StatelessWidget {
           ),
           RichText(
             text: TextSpan(
-              text: 'Forgot password?',
               style: DefaultTextStyle.of(context).style,
               children: <TextSpan>[
+                TextSpan(
+                  text: 'Forgot password?',
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () async {
+                      var url = "https://histography.io/";
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
+                ),
                 TextSpan(
                   text: '  •  ',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 TextSpan(
-                  text: 'Sign up fo Twitter',
+                  text: 'Sign up for Twitter',
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () async {
+                      var url = "https://www.google.com/";
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
                 ),
               ],
             ),
           ),
+
+          // <https://medium.com/codechai/how-to-create-hyperlink-for-text-in-flutter-ecf7d6019dfb>
+          // RichText(
+          //   text: TextSpan(
+          //     style: DefaultTextStyle.of(context).style,
+          //     children: <TextSpan>[
+          //       TextSpan(
+          //         text: "To learn more ",
+          //       ),
+          //       TextSpan(
+          //         text: "Click here",
+          //         recognizer: TapGestureRecognizer()
+          //           ..onTap = () async {
+          //             var url =
+          //                 "https://www.youtube.com/channel/UCwxiHP2Ryd-aR0SWKjYguxw?view_as=subscriber";
+          //             if (await canLaunch(url)) {
+          //               await launch(url);
+          //             } else {
+          //               throw 'Could not launch $url';
+          //             }
+          //           },
+          //       ),
+          //     ],
+          //   ),
+          // ),
+
           // <https://stackoverflow.com/questions/43583411/how-to-create-a-hyperlink-in-flutter-widget>
           // RichText(
           //   text: TextSpan(
