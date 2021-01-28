@@ -54,24 +54,24 @@ class Body extends StatelessWidget {
           ),
 
           // Simple TextFormField Method
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Phone, email, or username',
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Password',
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.all(10.0),
+          //   child: TextFormField(
+          //     decoration: InputDecoration(
+          //       labelText: 'Phone, email, or username',
+          //     ),
+          //   ),
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.all(10.0),
+          //   child: TextFormField(
+          //     decoration: InputDecoration(
+          //       labelText: 'Password',
+          //     ),
+          //   ),
+          // ),
 
-          // Simple TextFormField Method
+          // Button
           RoundedButton(
             text: "Log in",
             textColor: kSecondaryExExLightColor,
@@ -94,7 +94,8 @@ class Body extends StatelessWidget {
                   text: 'Forgot password?',
                   recognizer: TapGestureRecognizer()
                     ..onTap = () async {
-                      var url = "https://histography.io/";
+                      var url =
+                          "https://twitter.com/account/begin_password_reset";
                       if (await canLaunch(url)) {
                         await launch(url);
                       } else {
@@ -110,7 +111,7 @@ class Body extends StatelessWidget {
                   text: 'Sign up for Twitter',
                   recognizer: TapGestureRecognizer()
                     ..onTap = () async {
-                      var url = "https://www.google.com/";
+                      var url = "https://twitter.com/i/flow/signup";
                       if (await canLaunch(url)) {
                         await launch(url);
                       } else {
