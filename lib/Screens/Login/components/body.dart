@@ -4,6 +4,7 @@ import 'package:twitter_login_page/Screens/Login/components/background.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:twitter_login_page/Screens/Welcome/welcome_screen.dart';
 import 'package:twitter_login_page/components/rounded_button.dart';
+import 'package:twitter_login_page/components/rounded_input_field.dart';
 import 'package:twitter_login_page/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -69,7 +70,7 @@ class Body extends StatelessWidget {
             ),
           ),
 
-          // Simple
+          // Simple TextFormField Method
           RoundedButton(
             text: "Log in",
             textColor: kSecondaryExExLightColor,
@@ -178,59 +179,6 @@ class Body extends StatelessWidget {
           // ),
         ],
       ),
-    );
-  }
-}
-
-class RoundedCornerInputField extends StatelessWidget {
-  final String hintText;
-  final IconData icon;
-  final ValueChanged<String> onChanged;
-  const RoundedCornerInputField({
-    Key key,
-    this.hintText,
-    this.icon,
-    // this.icon = Icons.person,
-    this.onChanged,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFieldContainer(
-      child: TextField(
-        onChanged: onChanged,
-        decoration: InputDecoration(
-          icon: Icon(
-            icon,
-            color: kPrimaryColor,
-          ),
-          hintText: hintText,
-          border: InputBorder.none,
-        ),
-      ),
-    );
-  }
-}
-
-class TextFieldContainer extends StatelessWidget {
-  final Widget child;
-  const TextFieldContainer({
-    Key key,
-    this.child,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      width: size.width * 0.8,
-      decoration: BoxDecoration(
-        color: kSecondaryExExLightColor,
-        borderRadius: BorderRadius.circular(5),
-      ),
-      child: child,
     );
   }
 }
