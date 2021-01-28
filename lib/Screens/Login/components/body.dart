@@ -50,6 +50,7 @@ class Body extends StatelessWidget {
             hintText: "Password",
             onChanged: (value) {},
             icon: Icons.lock,
+            suffixIcon: Icons.visibility,
           ),
 
           // Simple TextFormField Method
